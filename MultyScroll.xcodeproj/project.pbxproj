@@ -9,19 +9,21 @@
 /* Begin PBXBuildFile section */
 		81E5252820EA62C0005717CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E5252720EA62C0005717CC /* AppDelegate.swift */; };
 		81E5252A20EA62C0005717CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E5252920EA62C0005717CC /* ViewController.swift */; };
-		81E5252D20EA62C0005717CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81E5252B20EA62C0005717CC /* Main.storyboard */; };
 		81E5252F20EA62C2005717CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81E5252E20EA62C2005717CC /* Assets.xcassets */; };
 		81E5253220EA62C2005717CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81E5253020EA62C2005717CC /* LaunchScreen.storyboard */; };
+		81E5254220ECAAEB005717CC /* CollapsingHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81E5254120ECAAEB005717CC /* CollapsingHeaderView.xib */; };
+		81E5254420ECAB97005717CC /* CollapsingHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E5254320ECAB97005717CC /* CollapsingHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		81E5252420EA62C0005717CC /* MultyScroll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultyScroll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81E5252720EA62C0005717CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81E5252920EA62C0005717CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		81E5252C20EA62C0005717CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		81E5252E20EA62C2005717CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81E5253120EA62C2005717CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81E5253320EA62C2005717CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81E5254120ECAAEB005717CC /* CollapsingHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollapsingHeaderView.xib; sourceTree = "<group>"; };
+		81E5254320ECAB97005717CC /* CollapsingHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsingHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +58,11 @@
 			children = (
 				81E5252720EA62C0005717CC /* AppDelegate.swift */,
 				81E5252920EA62C0005717CC /* ViewController.swift */,
-				81E5252B20EA62C0005717CC /* Main.storyboard */,
 				81E5252E20EA62C2005717CC /* Assets.xcassets */,
 				81E5253020EA62C2005717CC /* LaunchScreen.storyboard */,
 				81E5253320EA62C2005717CC /* Info.plist */,
+				81E5254320ECAB97005717CC /* CollapsingHeaderView.swift */,
+				81E5254120ECAAEB005717CC /* CollapsingHeaderView.xib */,
 			);
 			path = MultyScroll;
 			sourceTree = "<group>";
@@ -123,8 +126,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				81E5253220EA62C2005717CC /* LaunchScreen.storyboard in Resources */,
+				81E5254220ECAAEB005717CC /* CollapsingHeaderView.xib in Resources */,
 				81E5252F20EA62C2005717CC /* Assets.xcassets in Resources */,
-				81E5252D20EA62C0005717CC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,20 +140,13 @@
 			files = (
 				81E5252A20EA62C0005717CC /* ViewController.swift in Sources */,
 				81E5252820EA62C0005717CC /* AppDelegate.swift in Sources */,
+				81E5254420ECAB97005717CC /* CollapsingHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		81E5252B20EA62C0005717CC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				81E5252C20EA62C0005717CC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		81E5253020EA62C2005717CC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
