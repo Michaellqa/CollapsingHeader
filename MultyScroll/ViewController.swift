@@ -35,8 +35,6 @@ class ViewController: UIViewController {
         let header = CollapsingHeaderView(minVisibleHeight: 40, headerView: internalHeaderView)
         header.translatesAutoresizingMaskIntoConstraints = false
         header.onHeightChanged = { _, _ in
-//            self.tableView.setNeedsLayout()
-//            self.tableView.layoutIfNeeded()
             self.tableView.reloadData()
         }
         return header
@@ -62,7 +60,8 @@ class ViewController: UIViewController {
             tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
         
-        tableView.tableHeaderView = headerView
+        tableView.tableHeaderView = internalHeaderView
+        
     }
     
 }

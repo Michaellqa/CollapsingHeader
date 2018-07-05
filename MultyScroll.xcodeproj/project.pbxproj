@@ -13,6 +13,7 @@
 		81E5253220EA62C2005717CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81E5253020EA62C2005717CC /* LaunchScreen.storyboard */; };
 		81E5254220ECAAEB005717CC /* CollapsingHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81E5254120ECAAEB005717CC /* CollapsingHeaderView.xib */; };
 		81E5254420ECAB97005717CC /* CollapsingHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E5254320ECAB97005717CC /* CollapsingHeaderView.swift */; };
+		81E5256420ED5D00005717CC /* MovingOutHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E5256320ED5D00005717CC /* MovingOutHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		81E5253320EA62C2005717CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81E5254120ECAAEB005717CC /* CollapsingHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollapsingHeaderView.xib; sourceTree = "<group>"; };
 		81E5254320ECAB97005717CC /* CollapsingHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsingHeaderView.swift; sourceTree = "<group>"; };
+		81E5256320ED5D00005717CC /* MovingOutHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovingOutHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				81E5253320EA62C2005717CC /* Info.plist */,
 				81E5254320ECAB97005717CC /* CollapsingHeaderView.swift */,
 				81E5254120ECAAEB005717CC /* CollapsingHeaderView.xib */,
+				81E5256320ED5D00005717CC /* MovingOutHeader.swift */,
 			);
 			path = MultyScroll;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81E5252A20EA62C0005717CC /* ViewController.swift in Sources */,
+				81E5256420ED5D00005717CC /* MovingOutHeader.swift in Sources */,
 				81E5252820EA62C0005717CC /* AppDelegate.swift in Sources */,
 				81E5254420ECAB97005717CC /* CollapsingHeaderView.swift in Sources */,
 			);

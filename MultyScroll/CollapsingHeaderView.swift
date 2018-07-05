@@ -31,15 +31,6 @@ class CollapsingHeaderView: UIView {
         viewHeight = frame.height
         
         addSubview(internalView)
-        internalView.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            internalView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-//            internalView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-//            internalView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
-////            internalView.topAnchor.constraint(equalTo: self.topAnchor)
-//            internalView.heightAnchor.constraint(equalToConstant: 200),
-//            internalView.widthAnchor.constraint(equalToConstant: 200)
-        ])
         
         internalView.addGestureRecognizer(panGestureRecognizer)
     }
@@ -63,8 +54,8 @@ class CollapsingHeaderView: UIView {
             return
         }
         let newHeight = internalView.frame.size.height + delta
-//        frame.size.height = newHeight
-        internalView.frame.size.height = newHeight
+        frame.size.height = newHeight
+//        internalView.frame.size.height = newHeight
         
         print("whole \(frame)")
         print("content \(internalView.frame)")
@@ -73,21 +64,9 @@ class CollapsingHeaderView: UIView {
         onHeightChanged?(newHeight, 0)
     }
     
-//    override init(frame: CGRect) {
-//        super.init(frame: frame)
-//        commonInit()
-//    }
-    
     required init?(coder aDecoder: NSCoder) {
         internalView = UIView()
         super.init(coder: aDecoder)
     }
-    
-//    private func commonInit() {
-//        Bundle.main.loadNibNamed("CollapsingHeaderView", owner: self, options: nil)
-//        addSubview(contentView)
-//        contentView.frame = self.bounds
-//        contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-//    }
     
 }
